@@ -1,0 +1,39 @@
+
+
+.page-accueil {
+    .banner {
+      position: relative;
+      background-image: url('../images/img.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 300px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%; 
+      margin: 0 auto;
+      border-radius: 15px; // 
+  
+     
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); 
+        z-index: 1;
+        border-radius: 15px; 
+      }
+  
+    .banner-text {
+        position: relative;
+        color: white;
+        font-size: 2rem; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+        z-index: 2; 
+      }
+    }
+  }
+  
