@@ -1,4 +1,4 @@
-// Header.js
+
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
@@ -11,7 +11,7 @@ const Header = () => {
       
        
        <div className="logo">
-        {/* Remplacer le lien par une image */}
+        
         <img src="path/to/logo.png" alt="Logo Kasa" />
       </div>
       

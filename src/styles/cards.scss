@@ -1,0 +1,27 @@
+
+
+.apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .apartment-card {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    h2 {
+      font-size: 16px;
+      margin: 10px;
+    }
+  }
+  

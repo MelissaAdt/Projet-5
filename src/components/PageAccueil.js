@@ -1,5 +1,6 @@
-// PageAccueil.js
 import React from 'react';
+import AppartmentList from './AppartmentList';
+
 
 
 const PageAccueil = () => {
@@ -7,8 +8,11 @@ const PageAccueil = () => {
     <div className="page-accueil">
         <div className="banner">
             <div className="banner-text">
-                Chez vous, partout et ailleurs
+                <h1>Chez vous, partout et ailleurs</h1>
             </div>
+        </div>
+        <div className="cards-container">
+        <AppartmentList />
         </div>
     </div>
   );
