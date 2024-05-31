@@ -5,11 +5,11 @@ import data from '../data/data.json';
 
 const AppartmentList = () => {
     
-    const selectedApartments = data.slice(0, 6);
+    
   
     return (
       <div className="apartment-list">
-        {selectedApartments.map((apartment) => (
+        {data.map((apartment) => (
           <ApartmentCards
             key={apartment.id}
             title={apartment.title}

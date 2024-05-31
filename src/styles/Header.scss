@@ -1,15 +1,17 @@
-// Header.scss
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  nav {
+  .logo-header {
+    margin: 20px 0 0 70px; 
+  }
+
+nav {
     ul {
       list-style-type: none;
       padding: 0;
-      margin: 0;
+      margin-right: 70px;
       display: flex;
 
       li {

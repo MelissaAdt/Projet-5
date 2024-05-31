@@ -12,7 +12,11 @@
       align-items: center;
       max-width: 90%; 
       margin: 0 auto;
-      border-radius: 15px; // 
+      margin-bottom: 50px;
+      margin-top: 50px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+      
   
      
     &::before {
@@ -35,5 +39,13 @@
         z-index: 2; 
       }
     }
-  }
   
+    .cards-container {
+      max-width: 90%; 
+      margin: 20px auto; 
+      display: flex;
+      justify-content: center; 
+      background-color: #f2f2f2;
+      border-radius:15px;
+    }
+  }
