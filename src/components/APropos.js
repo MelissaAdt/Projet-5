@@ -1,12 +1,24 @@
 import React from 'react';
+import CollapseComponent from './CollapseComponent';
+import { aboutList } from './AboutList';
 
 const APropos = () => {
   return (
-    <div>
-      <h1>À Propos</h1>
-      <p>En savoir plus sur nous.</p>
+    <div className="page-apropos">
+      <div className="banner-apropos">
+        
+      </div>
+      <div className="collapse-container">
+        {aboutList.map(item => (
+          <CollapseComponent
+            key={item.title}
+            title={item.title}
+            content={item.content}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default APropos;
+export default APropos

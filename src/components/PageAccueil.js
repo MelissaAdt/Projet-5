@@ -6,7 +6,7 @@ import AppartmentList from './AppartmentList';
 const PageAccueil = () => {
   return (
     <div className="page-accueil">
-        <div className="banner">
+        <div className="banner-accueil">
             <div className="banner-text">
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
