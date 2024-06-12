@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../images/logo_kasa.svg'
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -6,14 +7,9 @@ const Header = () => {
 
   return (
     <header>
-      
-       
        <div className="logo-header">
-        
-        <img src="path/to/logo.png" alt="Logo Kasa" />
+        <img src={logo} alt="Logo Kasa" />
       </div>
-      
-      
       <nav>
         <ul>
           <li>

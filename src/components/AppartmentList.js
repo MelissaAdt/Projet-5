@@ -12,6 +12,7 @@ const AppartmentList = () => {
         {data.map((apartment) => (
           <ApartmentCards
             key={apartment.id}
+            id={apartment.id}
             title={apartment.title}
             cover={apartment.cover}
           />

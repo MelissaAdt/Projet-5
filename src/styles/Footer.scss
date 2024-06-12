@@ -1,16 +1,15 @@
-
 .footer {
-    background-color: black; 
-    color: white; 
-    text-align: center; 
-    padding: 20px;
-  
-    .logo_footer {
-      margin-bottom: 20px; 
-    }
-  
-    .text {
-      font-size: 1rem; 
-    }
+  background-color: black; 
+  color: white; 
+  text-align: center; 
+  padding: 20px;
+
+  .logo_footer {
+    margin-bottom: 20px; 
+   fill: white;
   }
-  
+
+  .text {
+    font-size: 1rem; 
+  }
+}

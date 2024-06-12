@@ -8,7 +8,7 @@ const PageAccueil = () => {
     <div className="page-accueil">
         <div className="banner-accueil">
             <div className="banner-text">
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>Chez vous, <br className ="line-break" /> partout et ailleurs</h1>
             </div>
         </div>
         <div className="cards-container">

@@ -51,4 +51,8 @@
     border-top: none;
     border-radius: 0 0 5px 5px; 
   }
+
+  @media (max-width: 768px) {
+    width: 90%; 
+  }
 }

@@ -9,14 +9,17 @@ import PageLogement from './components/PageLogement'
 const Router = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout><PageAccueil /></Layout>} />
-        <Route path="/apropos" element={<Layout><APropos /></Layout>} />
-        <Route path="*" element={<Layout><PageErreur /></Layout>} />
-        <Route path="/pagelogement" element={<Layout><PageLogement /></Layout>} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<PageAccueil />} />
+          <Route path="/apropos" element={<APropos />} />
+          <Route path="/logement/:id" element={<PageLogement />} />
+          <Route path="*" element={<PageErreur />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 };
 
 export default Router;
+
