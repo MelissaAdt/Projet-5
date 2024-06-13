@@ -9,7 +9,7 @@ const CollapseComponent = ({ title, content }) => {
   };
 
   return (
-    <div className="collapse-component">
+    <div className={`collapse-component ${isOpen ? 'collapse-open' : ''}`}>
       <div className="collapse-header">
         <span>{title}</span>
         <div className="arrow-container" onClick={toggleCollapse}>
