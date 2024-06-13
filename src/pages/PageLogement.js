@@ -41,31 +41,32 @@ const PageLogement = () => {
         );
     };
 
-    return (
-        <div className="page-logement">
-            <Slideshow images={logement.pictures} />
-            <div className="logement-details">
-                <div className="title-host-container">
-                    <div className="title-container">
-                        <h1>{logement.title}</h1>
-                        <h2>{logement.location}</h2>
+        return (
+            <div className="page-logement">
+                <Slideshow images={logement.pictures} />
+                <div className="logement-details">
+                    <div className="grid-container">
+                        <div className="left-column">
+                            <div className="title-container">
+                                <h1>{logement.title}</h1>
+                                <h2>{logement.location}</h2>
+                            </div>
+                            <div className="tags">
+                                {logement.tags.map((tag, index) => (
+                                    <p key={index}>{tag}</p>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="right-column">
+                        <div className="host-info">
+                            {renderHostName(logement.host.name)}
+                            <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
+                        </div>
+                            <div className="rating-container">
+                                {renderStars(logement.rating)}
+                            </div>
+                        </div>
                     </div>
-                    <div className="host-info">
-                        {renderHostName(logement.host.name)}
-                        <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
-                    </div>
-                </div>
-                <div className="tags-container">
-                    <div className="tags">
-                        {logement.tags.map((tag, index) => (
-                            <p key={index}>{tag}</p>
-                        ))}
-                    </div>
-                    
-                    <div className="rating-container">
-                        {renderStars(logement.rating)}
-                    </div>
-                </div>
                 <div className="collapse-container">
                     <CollapseComponent className="collapse-component" title="Description" content={logement.description} />
                     <CollapseComponent className="collapse-component" title="Equipements" content={logement.equipments.map((item, index) => <li key={index}>{item}</li>)} />
