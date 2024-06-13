@@ -29,11 +29,19 @@
                     font-size: 24px;
                     color: #FF6060; 
                     margin-bottom: 10px; 
+
+                    @media (min-width: 400px) and (max-width: 768px) { 
+                        font-size: 18px;
+                    }
                 }
 
                 h2 {
                     font-size: 18px; 
                     margin-bottom: 10px; 
+
+                    @media (min-width: 400px) and (max-width: 768px) { 
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -54,17 +62,25 @@
                     align-items: flex-end;
                     text-align: right; 
                     color: #FF6060; 
+
+                    @media (min-width: 400px) and (max-width: 768px) { 
+                        order: 4;
+                    }
                 }
 
                 .host-picture {
                     width: 50px; 
                     height: 50px;
                     border-radius: 50%; 
+
+                    @media (min-width: 400px) and (max-width: 768px) { 
+                        order: 5;
+                    }
                 }
             }
         }
 
-        .tags-rating-container {
+        .tags-container {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
@@ -124,11 +140,10 @@
                 height: auto; 
                 transition: height 0.3s; 
 
+            
+
             }
-                &.collapse-open .collapse-component {
-                    margin-bottom: 40px;
-        
-            }
+             
 
             .collapse-content { 
                 display: flex;

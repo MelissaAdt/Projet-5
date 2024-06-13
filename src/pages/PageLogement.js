@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/data.json';
-import Slideshow from './Slideshow';
-import CollapseComponent from './CollapseComponent';
+import Slideshow from '../components/Slideshow';
+import CollapseComponent from '../components/CollapseComponent';
 import PageErreur from './PageErreur';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -55,12 +55,13 @@ const PageLogement = () => {
                         <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
                     </div>
                 </div>
-                <div className="tags-rating-container">
+                <div className="tags-container">
                     <div className="tags">
                         {logement.tags.map((tag, index) => (
                             <p key={index}>{tag}</p>
                         ))}
                     </div>
+                    
                     <div className="rating-container">
                         {renderStars(logement.rating)}
                     </div>

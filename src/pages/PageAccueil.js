@@ -1,5 +1,5 @@
 import React from 'react';
-import AppartmentList from './AppartmentList';
+import AppartmentList from '../components/AppartmentList';
 
 
 

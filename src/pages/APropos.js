@@ -1,6 +1,6 @@
 import React from 'react';
-import CollapseComponent from './CollapseComponent';
-import { aboutList } from './AboutList';
+import CollapseComponent from '../components/CollapseComponent';
+import { aboutList } from '../components/AboutList';
 
 const APropos = () => {
   return (
