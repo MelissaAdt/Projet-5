@@ -70,7 +70,7 @@
         justify-content: center;
         background-color: #f2f2f2;
         border-radius: 15px;
-        cursor: pointer;
+        
       
         @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) { 
           background-color: white;
@@ -98,6 +98,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         width: 70%;
         margin: 30px 0px 30px 40px;
+        cursor: pointer;
 
         @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
           width: 100%;
