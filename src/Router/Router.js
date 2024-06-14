@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PageAccueil from './pages/PageAccueil';
-import APropos from './pages/APropos';
-import PageErreur from './pages/PageErreur';
-import Layout from './components/Layout';
-import PageLogement from './pages/PageLogement'
+import PageAccueil from '../pages/PageAccueil';
+import APropos from '../pages/APropos';
+import PageErreur from '../pages/PageErreur';
+import Layout from '../components/Layout';
+import PageLogement from '../pages/PageLogement'
 
 const Router = () => {
   return (

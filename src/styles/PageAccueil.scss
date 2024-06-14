@@ -16,7 +16,7 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 
 
-    @media (min-width: 400px) and (max-width: 768px) { 
+    @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
       max-width: 95%;
       height: 150px;
       margin:30px 20px 30px 20px;
@@ -47,14 +47,14 @@
           display: none;
         }
 
-        @media (min-width: 400px) and (max-width: 768px) { 
+        @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
           .line-break {
             display: inline;
           }
         }
       }
 
-      @media (min-width: 400px) and (max-width: 768px) { 
+      @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
         font-size: 14px;
         padding-left:20px;
         width: 90%;
@@ -71,7 +71,7 @@
     background-color: #f2f2f2;
     border-radius: 15px;
   
-    @media (min-width: 400px) and (max-width: 768px) { 
+    @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
       background-color: white;
     }
    
@@ -85,14 +85,12 @@
   width: 100%;
   padding: 20px 0px 20px 20px;
 
-  @media (min-width: 400px) and (max-width: 768px) { 
+  @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
     display: flex;
     flex-direction: column;
     padding: 0px;
   }
  
-
-
   .apartment-card {
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -100,10 +98,10 @@
     width: 70%;
     margin: 30px 0px 30px 40px;
 
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) {
       width: 100%;
       margin: 0px 0px 30px 0px;
-      height: 270px;
+      height: 90%;
     }
 
     img {

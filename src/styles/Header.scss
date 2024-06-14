@@ -6,14 +6,14 @@ header {
   .logo-header {
     margin: 20px 0 0 70px; 
 
-    @media (min-width: 400px) and (max-width: 768px) { 
+    @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
       margin: 0 0 0 15px;
       width: 40%;
     }
     
 
     img { 
-      @media (min-width: 400px) and (max-width: 768px) { 
+      @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
         width: 70%;
       }
     }
@@ -27,7 +27,7 @@ nav {
       margin-right: 70px;
       display: flex;
 
-      @media (min-width: 400px) and (max-width: 768px) { 
+      @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
         margin-right: 10px;
       }
 
@@ -35,7 +35,7 @@ nav {
       li {
         margin-left: 40px; 
        
-        @media (min-width: 400px) and (max-width: 768px) { 
+        @media (min-width: 400px) and (max-width: $breakpoint-mobile-max) { 
           text-transform: uppercase;
           font-weight: 600;
           font-size: 13px;
