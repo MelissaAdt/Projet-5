@@ -12,7 +12,7 @@
     display: none;
   }
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
     .line-break {
       display: inline;
     }
