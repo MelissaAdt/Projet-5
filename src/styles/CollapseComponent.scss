@@ -18,8 +18,10 @@
      border-radius: 5px;
      cursor: pointer; 
      user-select: none; 
+
      @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
       height: 15px;
+      font-size: 13px;
      }
 
     span { 
@@ -59,6 +61,12 @@
      transition: opacity 0.3s ease,
      transform 0.3s ease,
      height 0.3s ease;
+
+     p { 
+      @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) { 
+        font-size: 12px;
+      }
+     }
 
     &.collapsed { 
       opacity: 0;
