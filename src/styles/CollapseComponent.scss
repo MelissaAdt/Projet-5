@@ -18,6 +18,9 @@
      border-radius: 5px;
      cursor: pointer; 
      user-select: none; 
+     @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
+      height: 15px;
+     }
 
     span { 
        font-weight: bold;
