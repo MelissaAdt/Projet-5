@@ -19,8 +19,6 @@
         @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
             height: 225px;
         }
-
-        
     }
 
     .slideshow-image {
@@ -29,6 +27,7 @@
        object-fit: cover;
         border-radius: 15px; 
         display: block;
+        
 
         @media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) { 
             height: 100%;

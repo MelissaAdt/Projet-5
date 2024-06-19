@@ -1,14 +1,13 @@
 import React from 'react';
 import CollapseComponent from '../components/CollapseComponent';
-import { aboutList } from '../data/AboutList';
+import aboutList  from '../data/aboutlist.json';
 
 const APropos = () => {
   return (
     <div className="page-apropos">
       <div className="banner-apropos">
-        
       </div>
-      <div className="collapse-container">
+      <div className="collapse-container" >
         {aboutList.map(item => (
           <CollapseComponent
             key={item.title}
