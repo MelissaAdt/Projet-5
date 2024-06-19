@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import '../styles/CollapseComponent.scss';
 
 const CollapseComponent = ({ title, content }) => { 
- const [isOpen, setIsOpen] = useState(false);
-  const toggleCollapse = () => {    setIsOpen(!isOpen);
+const [isOpen, setIsOpen] = useState(false);
 
+const toggleCollapse = () => { 
+setIsOpen(!isOpen);
    };
   
    return (<div className={`collapse-component ${isOpen ? 'collapse-open' : ''}`}> 
@@ -20,6 +21,7 @@ const CollapseComponent = ({ title, content }) => {
           </div> 
           )} 
           </div> 
-        );};
+        );
+      };
 
 export default CollapseComponent;
