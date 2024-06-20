@@ -8,19 +8,21 @@ const toggleCollapse = () => {
 setIsOpen(!isOpen);
    };
   
-   return (<div className={`collapse-component ${isOpen ? 'collapse-open' : ''}`}> 
+   return (
+   
+   <div className={`collapse-component ${isOpen ? 'collapse-open' : ''}`}> 
       <div className="collapse-header" onClick={toggleCollapse}> 
-       <span>{title}</span> 
-       <div className="arrow-container"> 
-        <div className={`arrow ${isOpen ? 'open' : ''}`} />
+          <span>{title}</span> 
+          <div className="arrow-container"> 
+          <div className={`arrow ${isOpen ? 'open' : ''}`} />
         </div> 
-        </div>     
-         {isOpen && (
-          <div className="collapse-content"> 
-          <p>{content}</p>
+      </div>     
+          {isOpen && (
+            <div className="collapse-content"> 
+            <p>{content}</p>
           </div> 
           )} 
-          </div> 
+    </div> 
         );
       };
 
