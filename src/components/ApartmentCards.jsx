@@ -10,10 +10,19 @@ const ApartmentCards = ({ id, title, cover }) => {
     navigate(`/logement/${id}`);
   };
 
+  const words = title.split(' ');
+  const firstLine = words.slice(0, 3).join(' ');
+  const secondLine = words.slice(3).join(' ');
+
   return (
     <div className="apartment-card" onClick={handleClick}>
+      <div className="image-container">
       <img src={cover} alt={title} />
-      <h2>{title}</h2>
+      <h2>
+          {firstLine}
+          {secondLine && <><br />{secondLine}</>}
+        </h2>
+    </div>
     </div>
   );
 };
